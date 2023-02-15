@@ -13,6 +13,10 @@ Code is in [App.tsx](./src/App.tsx).
 
 ![React Diagram](./doc/react-diagram.png)
 
+- Green means Count component and hook instances
+- Blue means DOM
+- Grey is everything else
+
 ## Initial rendering, mounting
 
 1. Parent renders
