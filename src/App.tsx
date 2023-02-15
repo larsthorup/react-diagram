@@ -3,15 +3,15 @@ import { useEffect, useState } from "react";
 function Counter({ color }: { color: string }) {
   const [count, setCount] = useState(0);
   useEffect(() => {
-    console.log("useEffect", color);
     setCount(0);
   }, [color]);
-  console.log("render", count);
+  const clickHandler = () => {
+    setCount((count) => count + 1);
+  };
   return (
     <div>
-      <button onClick={() => setCount(count + 1)}>+</button>
+      <button onClick={clickHandler}>+</button>
       <span style={{ color }}>{count}</span>
-      <button onClick={() => setCount(count - 1)}>-</button>
     </div>
   );
 }
