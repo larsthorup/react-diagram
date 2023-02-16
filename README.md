@@ -1,6 +1,6 @@
 # react-diagram
 
-This diagram illustrates how React renders: mounting, rendering, reconciliation, event handling and effects.
+This diagram illustrates how React schedules: mounting, rendering, reconciliation, event handling and effects.
 
 ```
 npm install
